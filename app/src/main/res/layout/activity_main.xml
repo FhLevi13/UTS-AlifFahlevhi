@@ -45,7 +45,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/et_nomorpendaftaran"
         android:textSize="52px"
-        android:layout_margin="30px"/>
+        android:layout_margin="30px"
+        />
 
     <CheckBox
         android:id="@+id/cb_konfirmasi"
@@ -53,10 +54,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/sp_jalurpendaftaran"
         android:layout_centerHorizontal="true"
-        android:text="Konfirmasi Pendaftaran"
+        android:text="Konfirmasi Daftar"
         android:textSize="52px"
-        android:layout_marginTop="25px"
-        android:layout_marginBottom="25px"/>
+        android:layout_margin="30px"/>
 
     <Button
         android:id="@+id/btn_daftar"
@@ -66,6 +66,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/cb_konfirmasi"
         android:textSize="54px"
-        mar/>
+        android:layout_margin="30px"/>
 
 </RelativeLayout>
