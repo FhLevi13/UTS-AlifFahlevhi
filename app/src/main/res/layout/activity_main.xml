@@ -4,68 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:layout_margin="30px">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_form"
-        android:layout_width="900px"
+        android:layout_width="600px"
         android:layout_height="wrap_content"
         android:text="FORMULIR PENDAFTARAN"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
-        android:textSize="52px"
         android:layout_margin="30px"/>
 
     <EditText
         android:id="@+id/et_namalengkap"
-        android:layout_width="900px"
+        android:layout_width="600px"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_form"
         android:layout_centerHorizontal="true"
         android:hint="Nama"
-        android:textSize="52px"
         android:layout_margin="30px"/>
 
     <EditText
         android:id="@+id/et_nomorpendaftaran"
-        android:layout_width="900px"
+        android:layout_width="600px"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_namalengkap"
         android:layout_centerHorizontal="true"
         android:hint="Nomor Pendaftaran"
-        android:textSize="52px"
+        android:inputType="number"
         android:layout_margin="30px"/>
 
-    <Spinner
-        android:id="@+id/sp_jalurpendaftaran"
-        android:layout_width="900px"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sp_jalur_pendaftaran"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/jalur_pendaftaran"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/et_nomorpendaftaran"
-        android:textSize="52px"
         android:layout_margin="30px"
-        />
+        android:layout_below="@+id/et_nomorpendaftaran"
+        android:hint="Jalur Pendaftaran"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:id="@+id/atv_jalur_pendaftaran"
+                android:inputType="none">
+
+            </AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
         android:id="@+id/cb_konfirmasi"
-        android:layout_width="900px"
+        android:layout_width="600px"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sp_jalurpendaftaran"
+        android:layout_below="@+id/sp_jalur_pendaftaran"
         android:layout_centerHorizontal="true"
         android:text="Konfirmasi Daftar"
-        android:textSize="52px"
         android:layout_margin="30px"/>
 
     <Button
         android:id="@+id/btn_daftar"
-        android:layout_width="900px"
+        android:layout_width="600px"
         android:layout_height="wrap_content"
         android:text="Daftar"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/cb_konfirmasi"
-        android:textSize="54px"
         android:layout_margin="30px"/>
 
 </RelativeLayout>
