@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="30px">
+
+    <TextView
+        android:id="@+id/tv_form"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:text="FORMULIR PENDAFTARAN"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="52px"
+        android:layout_margin="30px"/>
+
+    <EditText
+        android:id="@+id/et_namalengkap"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_form"
+        android:layout_centerHorizontal="true"
+        android:hint="Nama"
+        android:textSize="52px"
+        android:layout_margin="30px"/>
+
+    <EditText
+        android:id="@+id/et_nomorpendaftaran"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_namalengkap"
+        android:layout_centerHorizontal="true"
+        android:hint="Nomor Pendaftaran"
+        android:textSize="52px"
+        android:layout_margin="30px"/>
+
+    <Spinner
+        android:id="@+id/sp_jalurpendaftaran"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:entries="@array/jalur_pendaftaran"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_nomorpendaftaran"
+        android:textSize="52px"
+        android:layout_margin="30px"/>
+
+    <CheckBox
+        android:id="@+id/cb_konfirmasi"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_jalurpendaftaran"
+        android:layout_centerHorizontal="true"
+        android:text="Konfirmasi Pendaftaran"
+        android:textSize="52px"
+        android:layout_marginTop="25px"
+        android:layout_marginBottom="25px"/>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cb_konfirmasi"
+        android:textSize="54px"
+        mar/>
+
+</RelativeLayout>
