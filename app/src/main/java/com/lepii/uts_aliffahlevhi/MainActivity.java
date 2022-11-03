@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnDaftar;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                     etNoPendaftaran.setError("No.Pendaftaran Tidak Boleh Kosong");
                 }
                 else if (JalurPendaftaran.trim().isEmpty()) {
-                    actvJalurPendaftaran.setError("Pilih Jalur Pendaftaran Terlebih Dahulu");
+                    Toast.makeText(MainActivity.this, "Pilih Jalur Pendaftaran Terlebih Dahulu", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     if (cbKonfirmasi.isChecked()) {
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(daftar);
                     }
                     else {
-                        cbKonfirmasi.setError("Konfirmasi Terlebih Dahulu");
+                        Toast.makeText(MainActivity.this, "Konfirmasi Terlebih Dahulu", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
